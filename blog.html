@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">    <!-- Engligh language, en stands for engligh--> 
+<head>
+  
+<title>webpage 1</title></time>
+<meta charset="utf-8">
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #more {display: none;}
+
+  html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/**/
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+  </style>
+  <style>
+
+.footer {
+  position: fixed;    
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+
+.fa {
+  padding: 5px;
+  font-size: 10px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 1px 1px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+</style>
+
+  <!-- iNSERT THE JAVASCRIPT CODE HERE -->
+  <script>
+    function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+  </script>
+</head>
+
+
+<body style="height:1500px">
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="#">Bila Clothes</a>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="code2.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="About us.html">About us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="gallery.html">Gallery</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="blog.html">Blog</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contact.html">Contact</a>
+    </li>
+    </ul>
+    <!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark"> -->
+  <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-success" type="submit">Search</button>
+  </form>
+</nav>
+<div class="container" style="margin-top: 56px;">
+
+<div class="header">
+  <h2>Bila Blog</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>THỜI TRANG Thứ Năm 05, Thg9, 2019</h2>
+      <h5>CẢM HỨNG CỔ ĐIỂN “HỒI SINH” THỔI LÀN GIÓ MỚI VÀO XU HƯỚNG PHỤ KIỆN THU ĐÔNG 2019</h5>
+      <div class="fakeimg" style="height:200px;  background-image: url('C:/Users/laptop/Desktop/web2/image/bg2.jpg');
+background-size: cover;
+}">
+      </div>
+      <p>Trong khi những chiếc túi xách có xu hướng nhỏ dần đều, phụ kiện bông tai càng dài lại càng được lòng các fashionistas trong mùa mốt Thu Đông 2019 này..</p>
+    </div>
+    <div class="card">
+      <h2>THỜI TRANG Thứ Năm 15, Thg8, 2019</h2>
+      <h5>SỰ LÊN NGÔI CỦA 6 XU HƯỚNG HỨA HẸN SẼ LÀM BÙNG NỔ LÀNG THỜI TRANG THU ĐÔNG 2019</h5>
+     <div class="fakeimg" style="height:200px;  background-image: url('C:/Users/laptop/Desktop/web2/image/g2.jpeg');
+background-size: cover;
+}">
+      </div>
+      <p>Các item xếp li nhẹ nhàng, ruffle lãng mạn, suit cá tính,… với những biến tấu đầy sáng tạo cùng bảng màu tươi sáng ấn tượng được các hot Instagramers khắp thế giới nhiệt liệt “lăng xê”.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+</div>
+<div class="footer">
+  <br>
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="https://www.google.com" class="fa fa-google"></a>
+<a href="https://www.youtube.com" class="fa fa-youtube"></a>
+<a href="https://www.instagram.com" class="fa fa-instagram"></a>
+
+  
+  <p class="pt-2"> copyright 2020 </p>
+
+</div>
+
+</body>
+
+
+
+</html>
